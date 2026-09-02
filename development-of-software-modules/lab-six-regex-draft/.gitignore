@@ -1,0 +1,74 @@
+# Visual Studio / .NET specific ignores
+
+## Build results
+bin/
+obj/
+out/
+output/
+
+## User-specific files
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+## Visual Studio cache files
+.vs/
+*.csproj.user
+
+## Build results
+[Dd]ebugPublic/
+[Rr]elease/
+x64/
+x86/
+build/
+bld/
+
+## NuGet packages
+packages/
+*.nupkg
+*.nuget.props
+*.nuget.targets
+
+## .NET Core / .NET
+project.lock.json
+project.fragment.lock.json
+artifacts/
+
+## Code coverage files
+*.coverage
+*.coveragexml
+*.coveragejson
+*.trx
+*.TestResults
+
+## IDE files
+*.sln.ide
+*.swp
+*.tmp
+*.temp
+*.log
+*.cache
+
+## OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+*.dll
+*.exe
+*.exe~
+*.dll~
+*.pdb
+
+## Backup files
+*~
+*.bak
+*.backup
+
+## Logs
+*.log
+logs/

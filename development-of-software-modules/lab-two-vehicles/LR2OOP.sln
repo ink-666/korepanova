@@ -1,0 +1,24 @@
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.5.2.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LR2OOP", "LR2OOP.csproj", "{C96DF9E7-9F07-92E4-B4AD-E374B4B0CA1C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C96DF9E7-9F07-92E4-B4AD-E374B4B0CA1C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C96DF9E7-9F07-92E4-B4AD-E374B4B0CA1C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C96DF9E7-9F07-92E4-B4AD-E374B4B0CA1C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C96DF9E7-9F07-92E4-B4AD-E374B4B0CA1C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {D19D7B78-4EB0-4474-9F3B-94283B000C2B}
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,15 @@
+# VS Code
+.vscode/
+*.code-workspace
+
+# .NET
+bin/
+obj/
+*.user
+*.suo
+*.userprefs
+
+# macOS
+.DS_Store
+*.swp
+*.lock

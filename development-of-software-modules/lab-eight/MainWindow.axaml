@@ -1,0 +1,79 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        x:Class="PhysicsApp.MainWindow"
+        Title="Физические задачи"
+        Width="480" Height="500"
+        WindowStartupLocation="CenterScreen">
+
+  <!-- Аналог Controls.Add() в WinForms — здесь всё описывается в разметке -->
+  <StackPanel Margin="20" Spacing="16">
+
+    <!-- ===== ЗАДАЧА 1: Объём цилиндра ===== -->
+    <TextBlock FontSize="16" FontWeight="Bold"
+               Text="Задача 1: Объём цилиндра (архимедова сила)"/>
+
+    <TextBlock TextWrapping="Wrap"
+               Text="Цилиндр взвесили в воздухе и в воде. Найдите объём цилиндра."/>
+
+    <!-- Label + TextBox — как в WinForms -->
+    <StackPanel Orientation="Horizontal" Spacing="8">
+      <TextBlock Width="220" VerticalAlignment="Center"
+                 Text="Показание в воздухе (Н):"/>
+      <TextBox x:Name="AirWeight_TB" Width="120"/>
+    </StackPanel>
+
+    <StackPanel Orientation="Horizontal" Spacing="8">
+      <TextBlock Width="220" VerticalAlignment="Center"
+                 Text="Показание в воде (Н):"/>
+      <TextBox x:Name="WaterWeight_TB" Width="120"/>
+    </StackPanel>
+
+    <StackPanel Orientation="Horizontal" Spacing="8">
+      <TextBlock Width="220" VerticalAlignment="Center"
+                 Text="Объём цилиндра (см³):"/>
+      <!-- IsReadOnly=True — аналог ReadOnly в WinForms TextBox -->
+      <TextBox x:Name="Volume_TB" Width="120" IsReadOnly="True"
+               Background="#F0F0F0"/>
+    </StackPanel>
+
+    <!-- Кнопка — аналог Button в WinForms -->
+    <Button x:Name="CalcVolume_B" Content="Рассчитать объём"
+            Click="CalcVolume_Click" HorizontalAlignment="Left"/>
+
+    <!-- Разделитель -->
+    <Separator/>
+
+    <!-- ===== ЗАДАЧА 3: Гидравлический пресс ===== -->
+    <TextBlock FontSize="16" FontWeight="Bold"
+               Text="Задача 3: Гидравлический пресс"/>
+
+    <TextBlock TextWrapping="Wrap"
+               Text="S₂ = k × S₁. Найдите силу F₂ по силе F₁ и коэффициенту k."/>
+
+    <StackPanel Orientation="Horizontal" Spacing="8">
+      <TextBlock Width="220" VerticalAlignment="Center"
+                 Text="Сила F₁ (Н):"/>
+      <TextBox x:Name="F1_TB" Width="120"/>
+    </StackPanel>
+
+    <StackPanel Orientation="Horizontal" Spacing="8">
+      <TextBlock Width="220" VerticalAlignment="Center"
+                 Text="Коэффициент k (S₂ = k × S₁):"/>
+      <TextBox x:Name="K_TB" Width="120" Text="4"/>
+    </StackPanel>
+
+    <StackPanel Orientation="Horizontal" Spacing="8">
+      <TextBlock Width="220" VerticalAlignment="Center"
+                 Text="Сила F₂ (Н):"/>
+      <TextBox x:Name="F2_TB" Width="120" IsReadOnly="True"
+               Background="#F0F0F0"/>
+    </StackPanel>
+
+    <Button x:Name="CalcPress_B" Content="Рассчитать силу"
+            Click="CalcPress_Click" HorizontalAlignment="Left"/>
+
+    <!-- Поле для сообщений об ошибках -->
+    <TextBlock x:Name="Error_L" Foreground="Red" TextWrapping="Wrap"/>
+
+  </StackPanel>
+</Window>

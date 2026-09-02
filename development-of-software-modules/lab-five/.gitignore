@@ -1,0 +1,29 @@
+# Создаём файл .gitignore
+cat > .gitignore << 'EOF'
+# C# build results
+bin/
+obj/
+*.user
+*.suo
+*.userprefs
+*.dll
+*.exe
+*.pdb
+*.cache
+Debug/
+Release/
+
+# VS Code
+.vscode/
+*.code-workspace
+
+# macOS
+.DS_Store
+*.swp
+*.lock
+*.log
+
+# Project files
+*.csproj.user
+*.sln
+EOF
