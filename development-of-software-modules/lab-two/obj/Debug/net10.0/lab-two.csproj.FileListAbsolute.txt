@@ -1,0 +1,15 @@
+/Users/ink/urpc/korepanova/development-of-software-modules/lab-two/bin/Debug/net10.0/lab-two
+/Users/ink/urpc/korepanova/development-of-software-modules/lab-two/bin/Debug/net10.0/lab-two.deps.json
+/Users/ink/urpc/korepanova/development-of-software-modules/lab-two/bin/Debug/net10.0/lab-two.runtimeconfig.json
+/Users/ink/urpc/korepanova/development-of-software-modules/lab-two/bin/Debug/net10.0/lab-two.dll
+/Users/ink/urpc/korepanova/development-of-software-modules/lab-two/bin/Debug/net10.0/lab-two.pdb
+/Users/ink/urpc/korepanova/development-of-software-modules/lab-two/obj/Debug/net10.0/lab-two.GeneratedMSBuildEditorConfig.editorconfig
+/Users/ink/urpc/korepanova/development-of-software-modules/lab-two/obj/Debug/net10.0/lab-two.AssemblyInfoInputs.cache
+/Users/ink/urpc/korepanova/development-of-software-modules/lab-two/obj/Debug/net10.0/lab-two.AssemblyInfo.cs
+/Users/ink/urpc/korepanova/development-of-software-modules/lab-two/obj/Debug/net10.0/lab-two.csproj.CoreCompileInputs.cache
+/Users/ink/urpc/korepanova/development-of-software-modules/lab-two/obj/Debug/net10.0/lab-two.sourcelink.json
+/Users/ink/urpc/korepanova/development-of-software-modules/lab-two/obj/Debug/net10.0/lab-two.dll
+/Users/ink/urpc/korepanova/development-of-software-modules/lab-two/obj/Debug/net10.0/refint/lab-two.dll
+/Users/ink/urpc/korepanova/development-of-software-modules/lab-two/obj/Debug/net10.0/lab-two.pdb
+/Users/ink/urpc/korepanova/development-of-software-modules/lab-two/obj/Debug/net10.0/lab-two.genruntimeconfig.cache
+/Users/ink/urpc/korepanova/development-of-software-modules/lab-two/obj/Debug/net10.0/ref/lab-two.dll
