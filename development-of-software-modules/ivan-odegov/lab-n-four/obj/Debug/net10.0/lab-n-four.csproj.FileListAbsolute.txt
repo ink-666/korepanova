@@ -1,0 +1,15 @@
+/Users/iodegov/dev/college/development-of-software-modules/c-sharp/lab-n-four/bin/Debug/net10.0/lab-n-four
+/Users/iodegov/dev/college/development-of-software-modules/c-sharp/lab-n-four/bin/Debug/net10.0/lab-n-four.deps.json
+/Users/iodegov/dev/college/development-of-software-modules/c-sharp/lab-n-four/bin/Debug/net10.0/lab-n-four.runtimeconfig.json
+/Users/iodegov/dev/college/development-of-software-modules/c-sharp/lab-n-four/bin/Debug/net10.0/lab-n-four.dll
+/Users/iodegov/dev/college/development-of-software-modules/c-sharp/lab-n-four/bin/Debug/net10.0/lab-n-four.pdb
+/Users/iodegov/dev/college/development-of-software-modules/c-sharp/lab-n-four/obj/Debug/net10.0/lab-n-four.GeneratedMSBuildEditorConfig.editorconfig
+/Users/iodegov/dev/college/development-of-software-modules/c-sharp/lab-n-four/obj/Debug/net10.0/lab-n-four.AssemblyInfoInputs.cache
+/Users/iodegov/dev/college/development-of-software-modules/c-sharp/lab-n-four/obj/Debug/net10.0/lab-n-four.AssemblyInfo.cs
+/Users/iodegov/dev/college/development-of-software-modules/c-sharp/lab-n-four/obj/Debug/net10.0/lab-n-four.csproj.CoreCompileInputs.cache
+/Users/iodegov/dev/college/development-of-software-modules/c-sharp/lab-n-four/obj/Debug/net10.0/lab-n-four.sourcelink.json
+/Users/iodegov/dev/college/development-of-software-modules/c-sharp/lab-n-four/obj/Debug/net10.0/lab-n-four.dll
+/Users/iodegov/dev/college/development-of-software-modules/c-sharp/lab-n-four/obj/Debug/net10.0/refint/lab-n-four.dll
+/Users/iodegov/dev/college/development-of-software-modules/c-sharp/lab-n-four/obj/Debug/net10.0/lab-n-four.pdb
+/Users/iodegov/dev/college/development-of-software-modules/c-sharp/lab-n-four/obj/Debug/net10.0/lab-n-four.genruntimeconfig.cache
+/Users/iodegov/dev/college/development-of-software-modules/c-sharp/lab-n-four/obj/Debug/net10.0/ref/lab-n-four.dll
