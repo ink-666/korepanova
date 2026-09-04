@@ -1,0 +1,15 @@
+/Users/iodegov/dev/college/development-of-software-modules/lab-n-six/bin/Debug/net10.0/lab-n-six
+/Users/iodegov/dev/college/development-of-software-modules/lab-n-six/bin/Debug/net10.0/lab-n-six.deps.json
+/Users/iodegov/dev/college/development-of-software-modules/lab-n-six/bin/Debug/net10.0/lab-n-six.runtimeconfig.json
+/Users/iodegov/dev/college/development-of-software-modules/lab-n-six/bin/Debug/net10.0/lab-n-six.dll
+/Users/iodegov/dev/college/development-of-software-modules/lab-n-six/bin/Debug/net10.0/lab-n-six.pdb
+/Users/iodegov/dev/college/development-of-software-modules/lab-n-six/obj/Debug/net10.0/lab-n-six.GeneratedMSBuildEditorConfig.editorconfig
+/Users/iodegov/dev/college/development-of-software-modules/lab-n-six/obj/Debug/net10.0/lab-n-six.AssemblyInfoInputs.cache
+/Users/iodegov/dev/college/development-of-software-modules/lab-n-six/obj/Debug/net10.0/lab-n-six.AssemblyInfo.cs
+/Users/iodegov/dev/college/development-of-software-modules/lab-n-six/obj/Debug/net10.0/lab-n-six.csproj.CoreCompileInputs.cache
+/Users/iodegov/dev/college/development-of-software-modules/lab-n-six/obj/Debug/net10.0/lab-n-six.sourcelink.json
+/Users/iodegov/dev/college/development-of-software-modules/lab-n-six/obj/Debug/net10.0/lab-n-six.dll
+/Users/iodegov/dev/college/development-of-software-modules/lab-n-six/obj/Debug/net10.0/refint/lab-n-six.dll
+/Users/iodegov/dev/college/development-of-software-modules/lab-n-six/obj/Debug/net10.0/lab-n-six.pdb
+/Users/iodegov/dev/college/development-of-software-modules/lab-n-six/obj/Debug/net10.0/lab-n-six.genruntimeconfig.cache
+/Users/iodegov/dev/college/development-of-software-modules/lab-n-six/obj/Debug/net10.0/ref/lab-n-six.dll

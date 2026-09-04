@@ -1,0 +1,15 @@
+/Users/iodegov/dev/03_Other/development-of-software-modules/c-sharp/lab-n-seven/bin/Debug/net10.0/lab-n-seven
+/Users/iodegov/dev/03_Other/development-of-software-modules/c-sharp/lab-n-seven/bin/Debug/net10.0/lab-n-seven.deps.json
+/Users/iodegov/dev/03_Other/development-of-software-modules/c-sharp/lab-n-seven/bin/Debug/net10.0/lab-n-seven.runtimeconfig.json
+/Users/iodegov/dev/03_Other/development-of-software-modules/c-sharp/lab-n-seven/bin/Debug/net10.0/lab-n-seven.dll
+/Users/iodegov/dev/03_Other/development-of-software-modules/c-sharp/lab-n-seven/bin/Debug/net10.0/lab-n-seven.pdb
+/Users/iodegov/dev/03_Other/development-of-software-modules/c-sharp/lab-n-seven/obj/Debug/net10.0/lab-n-seven.GeneratedMSBuildEditorConfig.editorconfig
+/Users/iodegov/dev/03_Other/development-of-software-modules/c-sharp/lab-n-seven/obj/Debug/net10.0/lab-n-seven.AssemblyInfoInputs.cache
+/Users/iodegov/dev/03_Other/development-of-software-modules/c-sharp/lab-n-seven/obj/Debug/net10.0/lab-n-seven.AssemblyInfo.cs
+/Users/iodegov/dev/03_Other/development-of-software-modules/c-sharp/lab-n-seven/obj/Debug/net10.0/lab-n-seven.csproj.CoreCompileInputs.cache
+/Users/iodegov/dev/03_Other/development-of-software-modules/c-sharp/lab-n-seven/obj/Debug/net10.0/lab-n-seven.sourcelink.json
+/Users/iodegov/dev/03_Other/development-of-software-modules/c-sharp/lab-n-seven/obj/Debug/net10.0/lab-n-seven.dll
+/Users/iodegov/dev/03_Other/development-of-software-modules/c-sharp/lab-n-seven/obj/Debug/net10.0/refint/lab-n-seven.dll
+/Users/iodegov/dev/03_Other/development-of-software-modules/c-sharp/lab-n-seven/obj/Debug/net10.0/lab-n-seven.pdb
+/Users/iodegov/dev/03_Other/development-of-software-modules/c-sharp/lab-n-seven/obj/Debug/net10.0/lab-n-seven.genruntimeconfig.cache
+/Users/iodegov/dev/03_Other/development-of-software-modules/c-sharp/lab-n-seven/obj/Debug/net10.0/ref/lab-n-seven.dll
