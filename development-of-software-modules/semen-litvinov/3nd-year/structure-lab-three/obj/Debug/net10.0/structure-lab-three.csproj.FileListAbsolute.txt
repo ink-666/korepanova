@@ -1,0 +1,15 @@
+/Users/ink/urpc/korepanova/development-of-software-modules/semen-litvinov/3nd-year/structure-lab-three/bin/Debug/net10.0/structure-lab-three
+/Users/ink/urpc/korepanova/development-of-software-modules/semen-litvinov/3nd-year/structure-lab-three/bin/Debug/net10.0/structure-lab-three.deps.json
+/Users/ink/urpc/korepanova/development-of-software-modules/semen-litvinov/3nd-year/structure-lab-three/bin/Debug/net10.0/structure-lab-three.runtimeconfig.json
+/Users/ink/urpc/korepanova/development-of-software-modules/semen-litvinov/3nd-year/structure-lab-three/bin/Debug/net10.0/structure-lab-three.dll
+/Users/ink/urpc/korepanova/development-of-software-modules/semen-litvinov/3nd-year/structure-lab-three/bin/Debug/net10.0/structure-lab-three.pdb
+/Users/ink/urpc/korepanova/development-of-software-modules/semen-litvinov/3nd-year/structure-lab-three/obj/Debug/net10.0/structure-lab-three.GeneratedMSBuildEditorConfig.editorconfig
+/Users/ink/urpc/korepanova/development-of-software-modules/semen-litvinov/3nd-year/structure-lab-three/obj/Debug/net10.0/structure-lab-three.AssemblyInfoInputs.cache
+/Users/ink/urpc/korepanova/development-of-software-modules/semen-litvinov/3nd-year/structure-lab-three/obj/Debug/net10.0/structure-lab-three.AssemblyInfo.cs
+/Users/ink/urpc/korepanova/development-of-software-modules/semen-litvinov/3nd-year/structure-lab-three/obj/Debug/net10.0/structure-lab-three.csproj.CoreCompileInputs.cache
+/Users/ink/urpc/korepanova/development-of-software-modules/semen-litvinov/3nd-year/structure-lab-three/obj/Debug/net10.0/structure-lab-three.sourcelink.json
+/Users/ink/urpc/korepanova/development-of-software-modules/semen-litvinov/3nd-year/structure-lab-three/obj/Debug/net10.0/structure-lab-three.dll
+/Users/ink/urpc/korepanova/development-of-software-modules/semen-litvinov/3nd-year/structure-lab-three/obj/Debug/net10.0/refint/structure-lab-three.dll
+/Users/ink/urpc/korepanova/development-of-software-modules/semen-litvinov/3nd-year/structure-lab-three/obj/Debug/net10.0/structure-lab-three.pdb
+/Users/ink/urpc/korepanova/development-of-software-modules/semen-litvinov/3nd-year/structure-lab-three/obj/Debug/net10.0/structure-lab-three.genruntimeconfig.cache
+/Users/ink/urpc/korepanova/development-of-software-modules/semen-litvinov/3nd-year/structure-lab-three/obj/Debug/net10.0/ref/structure-lab-three.dll
