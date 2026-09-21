@@ -4,12 +4,8 @@ using System.Threading;
 
 namespace SnakeGame
 {
-    // ------------------------------------------------------------------
-    //  Узел двусвязного списка, представляющего тело змейки.
-    //  Структура неуправляемая (unmanaged) — это позволяет размещать её
-    //  в "сырой" памяти через Marshal.AllocHGlobal и работать с ней
-    //  исключительно через указатели, без участия сборщика мусора.
-    // ------------------------------------------------------------------
+    // Узел двусвязного списка (тело змейки). Размещается в "сырой" памяти
+    // через Marshal.AllocHGlobal и управляется только через указатели.
     internal unsafe struct SnakeNode
     {
         public int X;
@@ -18,10 +14,6 @@ namespace SnakeGame
         public SnakeNode* Next;
     }
 
-    // ------------------------------------------------------------------
-    //  Еда — тоже хранится в динамической памяти и доступна только
-    //  через указатель Food*.
-    // ------------------------------------------------------------------
     internal struct Food
     {
         public int X;
@@ -36,10 +28,8 @@ namespace SnakeGame
         Right
     }
 
-    // ------------------------------------------------------------------
-    //  Класс "Змейка" — реализует двусвязный список узлов SnakeNode
-    //  вручную, через указатели (без List<T>, LinkedList<T> и т.п.).
-    // ------------------------------------------------------------------
+    // Двусвязный список узлов SnakeNode, реализованный вручную через
+    // указатели (без List<T>/LinkedList<T>).
     internal unsafe class Snake
     {
         public SnakeNode* Head;
@@ -52,7 +42,6 @@ namespace SnakeGame
             Length = 1;
         }
 
-        // Выделение памяти под новый узел напрямую в куче процесса.
         private static SnakeNode* AllocateNode(int x, int y)
         {
             SnakeNode* node = (SnakeNode*)Marshal.AllocHGlobal(sizeof(SnakeNode));
@@ -63,7 +52,6 @@ namespace SnakeGame
             return node;
         }
 
-        // Добавление новой головы (двусвязный список: Head <-> ... <-> Tail).
         public void AddHead(int x, int y)
         {
             SnakeNode* node = AllocateNode(x, y);
@@ -73,7 +61,6 @@ namespace SnakeGame
             Length++;
         }
 
-        // Удаление хвоста с освобождением динамической памяти.
         public void RemoveTail()
         {
             if (Tail == null) return;
@@ -90,8 +77,7 @@ namespace SnakeGame
             Length--;
         }
 
-        // Проверка столкновения точки (x, y) с телом змейки.
-        // skipHead = true позволяет не учитывать саму голову при проверке.
+        // skipHead = true исключает саму голову из проверки.
         public bool Collides(int x, int y, bool skipHead = false)
         {
             SnakeNode* current = Head;
@@ -106,7 +92,6 @@ namespace SnakeGame
             return false;
         }
 
-        // Полное освобождение всех узлов списка (вызывается при выходе из игры).
         public void FreeAll()
         {
             SnakeNode* current = Head;
@@ -123,19 +108,16 @@ namespace SnakeGame
 
     internal static unsafe class Program
     {
-        private const int Width = 30;   // ширина игрового поля (в символах)
-        private const int Height = 20;  // высота игрового поля (в символах)
-        private const int TickMs = 130; // задержка между кадрами, мс
+        private const int Width = 30;
+        private const int Height = 20;
+        private const int TickMs = 130;
 
         private static void Main()
         {
             Console.CursorVisible = false;
             Console.Title = "Snake (указатели, двусвязный список)";
-            // Полная очистка экрана один раз в начале.
-            // Дальше используем ANSI "курсор домой" вместо SetCursorPosition,
-            // т.к. на macOS/Linux SetCursorPosition работает по координатам
-            // буфера, а не видимой области, и после прокрутки терминала
-            // "уезжает" — из-за этого кадры не перезаписываются, а копятся.
+            // ANSI-очистка экрана: SetCursorPosition на Unix "уезжает" после
+            // прокрутки терминала, из-за этого кадры не перезаписываются.
             Console.Write("\u001b[2J");
 
             var snake = new Snake(Width / 2, Height / 2);
@@ -151,14 +133,12 @@ namespace SnakeGame
             {
                 while (!gameOver)
                 {
-                    // ---- неблокирующее чтение клавиатуры ----
                     if (Console.KeyAvailable)
                     {
                         ConsoleKey key = Console.ReadKey(intercept: true).Key;
                         direction = UpdateDirection(direction, key);
                     }
 
-                    // ---- вычисление новой позиции головы ----
                     int newX = snake.Head->X;
                     int newY = snake.Head->Y;
                     switch (direction)
@@ -169,7 +149,6 @@ namespace SnakeGame
                         case Direction.Right: newX++; break;
                     }
 
-                    // ---- проверка столкновения со стеной ----
                     if (newX < 0 || newX >= Width || newY < 0 || newY >= Height)
                     {
                         gameOver = true;
@@ -178,9 +157,8 @@ namespace SnakeGame
 
                     bool willEat = (newX == food->X && newY == food->Y);
 
-                    // ---- проверка столкновения с собственным телом ----
-                    // Если еда не съедена, хвост в этом кадре уйдёт,
-                    // поэтому саму последнюю клетку хвоста не считаем столкновением.
+                    // Если еда не съедена, хвост в этом кадре уйдёт — не считаем
+                    // столкновением попадание головы в текущую клетку хвоста.
                     bool bodyToCheck = snake.Collides(newX, newY);
                     if (bodyToCheck && !(!willEat && newX == snake.Tail->X && newY == snake.Tail->Y && snake.Length > 1))
                     {
@@ -188,7 +166,6 @@ namespace SnakeGame
                         break;
                     }
 
-                    // ---- перемещение змейки ----
                     snake.AddHead(newX, newY);
                     if (willEat)
                     {
@@ -216,7 +193,7 @@ namespace SnakeGame
             Console.ReadKey(true);
         }
 
-        // Запрещаем разворот змейки на 180 градусов "в лоб".
+        // Запрещает разворот на 180 градусов.
         private static Direction UpdateDirection(Direction current, ConsoleKey key)
         {
             switch (key)
@@ -234,7 +211,6 @@ namespace SnakeGame
             }
         }
 
-        // Размещение еды на случайной свободной клетке поля.
         private static readonly Random Rng = new Random();
 
         private static void SpawnFood(Food* food, Snake snake)
@@ -250,7 +226,6 @@ namespace SnakeGame
             food->Y = y;
         }
 
-        // Отрисовка поля в консоли (перерисовка каждый кадр).
         private static void Render(Snake snake, Food* food, int score)
         {
             char[,] buffer = new char[Height, Width];
@@ -270,7 +245,7 @@ namespace SnakeGame
             }
 
             var sb = new System.Text.StringBuilder();
-            sb.Append("\u001b[H"); // курсор в левый верхний угол видимой области (ANSI)
+            sb.Append("\u001b[H"); // ANSI: курсор в левый верхний угол видимой области
             sb.Append('#', Width + 2).Append('\n');
             for (int y = 0; y < Height; y++)
             {
@@ -280,9 +255,7 @@ namespace SnakeGame
                 sb.Append('#').Append('\n');
             }
             sb.Append('#', Width + 2).Append('\n');
-            // PadRight гарантирует фиксированную ширину строки статуса,
-            // чтобы более короткая строка полностью затирала предыдущую,
-            // более длинную (иначе остаются "хвосты" старого текста).
+            // PadRight — чтобы короткая строка затирала более длинную предыдущую.
             string status = $"Счёт: {score}".PadRight(Width + 2 + 30);
             sb.Append(status);
 
