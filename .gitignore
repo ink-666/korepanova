@@ -4,3 +4,31 @@ result.txt
 **/obj/
 *.zip
 *.csv
+
+# macOS
+._*
+
+# IDE
+.vs/
+.vscode/
+.idea/
+*.user
+*.suo
+*.swp
+
+# Сборка и логи
+TestResults/
+*.log
+publish/
+
+# Временные файлы
+~$*
+*.tmp
+
+# Windows
+Thumbs.db
+Desktop.ini
+
+# Секреты
+.env
+*.pfx
