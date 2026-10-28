@@ -18,12 +18,12 @@ class Program
         b = new int[n];
         result = new long[n];
 
-        Console.WriteLine("Заполнение массивов...");
         Random rnd = new Random();
+        Console.WriteLine("Заполнение массивов...");
         for (int i = 0; i < n; i++)
         {
-            a[i] = rnd.Next(1, 100);
             b[i] = rnd.Next(1, 100);
+            a[i] = rnd.Next(1, 100);
         }
 
         Stopwatch sw = new Stopwatch();
